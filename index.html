@@ -6,24 +6,42 @@
 <title>St. Michael's Anglican Church, Egbeda</title>
 
 <!-- ═══════════════════════════════════════════════
-     OPEN GRAPH / WHATSAPP PREVIEW TAGS
+     OPEN GRAPH / WHATSAPP / FACEBOOK PREVIEW TAGS
      ═══════════════════════════════════════════════ -->
 <meta property="og:title" content="St. Michael's Anglican Church, Egbeda" />
 <meta property="og:description" content="Citadel of Peace Where Jesus Reigns — Sunday Service 7:00 AM | Egbeda, Lagos." />
 <meta property="og:image" content="https://vortexsmithz.github.io/st.michaelsanglicanchurch/church.jpeg" />
+<meta property="og:image:secure_url" content="https://vortexsmithz.github.io/st.michaelsanglicanchurch/church.jpeg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:url" content="https://vortexsmithz.github.io/st.michaelsanglicanchurch/" />
 <meta property="og:type" content="website" />
+<meta property="og:site_name" content="St. Michael's Anglican Church, Egbeda" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="St. Michael's Anglican Church, Egbeda" />
+<meta name="twitter:description" content="Citadel of Peace Where Jesus Reigns — Sunday Service 7:00 AM | Egbeda, Lagos." />
 <meta name="twitter:image" content="https://vortexsmithz.github.io/st.michaelsanglicanchurch/church.jpeg" />
+
+<!-- ═══ SPEED: Preconnect to external servers FIRST ═══ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+<!-- ═══ SPEED: Preload hero background + logo ═══ -->
+<link rel="preload" as="image" href="church.jpg">
+<link rel="preload" as="image" href="logo.png">
+
+<!-- ═══ Google Fonts with font-display=swap ═══ -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- ═══ Font Awesome — non-blocking load ═══ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Poppins',sans-serif;background:#fffde7;line-height:1.6;overflow-x:hidden;}
+body{font-family:'Poppins',sans-serif;background:#fffde7;line-height:1.6;overflow-x:hidden;font-display:swap;}
 
 /* ─── SLIDE TRANSITION OVERLAY ─── */
 #slide-overlay{
@@ -78,7 +96,7 @@ a,a:visited,a:hover,a:active{text-decoration:none;color:inherit;}
 .flyer-card .card-title{color:#ffffff;}
 .flyer-card img{width:100%;height:150px;object-fit:contain;background:rgb(187,187,187);border-radius:12px;display:block;}
 
-/* ─── FULL-SCREEN POPUP (FIXED) ─── */
+/* ─── FULL-SCREEN POPUP ─── */
 .popup{
   display:none;
   position:fixed;
@@ -144,7 +162,7 @@ a,a:visited,a:hover,a:active{text-decoration:none;color:inherit;}
 .contact-card-value{font-size:15px;font-weight:700;color:#ffffff;line-height:1.5;}
 .contact-card-value a{color:#fdd835 !important;font-weight:700;}
 
-/* ─── FLOATING WHATSAPP BUTTON — simple circle, no expand ─── */
+/* ─── FLOATING WHATSAPP BUTTON ─── */
 .wa-float{
   position:fixed;
   bottom:24px;
@@ -204,7 +222,7 @@ footer{background:linear-gradient(135deg,#000000 0%,#000000 50%,#000000 100%);co
 </head>
 <body>
 
-<!-- SLIDE OVERLAY (curtain that swipes across on social link tap) -->
+<!-- SLIDE OVERLAY -->
 <div id="slide-overlay"></div>
 
 <nav class="navbar">WELCOME!</nav>
@@ -212,7 +230,7 @@ footer{background:linear-gradient(135deg,#000000 0%,#000000 50%,#000000 100%);co
 <section class="hero">
   <div class="overlay">
     <div class="top-text">CHURCH OF NIGERIA<br>(ANGLICAN COMMUNION)<br>DIOCESE OF LAGOS WEST</div>
-    <img src="logo.png" class="hero-logo" alt="Church Logo">
+    <img src="logo.png" class="hero-logo" alt="Church Logo" decoding="async">
     <h2 class="main-title">ST. MICHAEL'S ANGLICAN CHURCH, EGBEDA</h2>
     <p class="tagline">(CITADEL OF PEACE WHERE JESUS REIGNS)</p>
     <p class="address">40 ALH.RAMOTA CL BY BANIRE B/STP OR BAKERY B/STP<br>AKOWONJO RD, EGBEDA LAGOS.</p>
@@ -270,7 +288,7 @@ footer{background:linear-gradient(135deg,#000000 0%,#000000 50%,#000000 100%);co
         <div class="event-item">
           <div class="event-dot"></div>
           <div>
-            <div class="event-name">8:00 AM Mattins(Combined Service) / Harvest Unveiling/ Launching</div>
+            <div class="event-name">8:00 AM Mattins(Combined Service) / Harvest Unveiling / Launching</div>
             <div class="event-date">May 10th, 2026 &bull; 8:00 AM</div>
           </div>
         </div>
@@ -281,7 +299,7 @@ footer{background:linear-gradient(135deg,#000000 0%,#000000 50%,#000000 100%);co
     <div class="flyer-card" style="align-self:start;" onclick="openPopup(event)">
       <div class="card-icon"><i class="fas fa-image"></i></div>
       <div class="card-title">Flyer — tap to enlarge</div>
-      <img src="flyer.png" class="notice-img" alt="Church Flyer">
+      <img src="flyer.png" class="notice-img" alt="Church Flyer" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
@@ -306,10 +324,10 @@ footer{background:linear-gradient(135deg,#000000 0%,#000000 50%,#000000 100%);co
 <!-- FULL-SCREEN POPUP -->
 <div class="popup" id="popup" onclick="closePopup(event)">
   <div class="popup-close" onclick="closePopup(event)">&times;</div>
-  <img src="flyer.png" alt="Full Flyer">
+  <img src="flyer.png" alt="Full Flyer" decoding="async">
 </div>
 
-<!-- ─── FLOATING WHATSAPP BUTTON ─── -->
+<!-- FLOATING WHATSAPP BUTTON -->
 <div class="wa-float">
   <a href="https://wa.me/2348037210209" target="_blank" class="social-link" title="Chat on WhatsApp">
     <i class="fab fa-whatsapp wa-icon"></i>
