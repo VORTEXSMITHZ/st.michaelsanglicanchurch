@@ -61,7 +61,13 @@ body{font-family:'Poppins',sans-serif;background:#fffde7;line-height:1.6;overflo
 .navbar{background:#fdd835;padding:14px;text-align:center;font-weight:700;font-size:16px;letter-spacing:.3px;}
 .hero{min-height:100vh;background:#000000 url('church.jpg') no-repeat center/cover;position:relative;display:flex;}
 .overlay{position:relative;width:100%;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;padding:60px 20px 30px;gap:8px;background:rgba(0,0,0,0.42);}
-.top-text{color:#fdd835;font-size:15px;font-weight:600;line-height:1.6;}
+
+/* ─── TOP TEXT HIERARCHY ─── */
+.top-text{font-weight:600;line-height:1.3;display:flex;flex-direction:column;align-items:center;gap:1px;}
+.top-text .diocese{font-size:19px;color:#e53935;font-weight:900;letter-spacing:.5px;}
+.top-text .nigeria{font-size:20px;color:#fdd835;font-weight:700;letter-spacing:.3px;}
+.top-text .anglican{font-size:14.5px;color:#fdd835;font-weight:600;letter-spacing:.2px;}
+
 .hero-logo{width:130px;margin:6px;}
 .main-title{font-family:'Playfair Display',serif;font-size:30px;color:#fff;line-height:1.2;animation:glow 2s ease-in-out infinite alternate;}
 @keyframes glow{from{text-shadow:0 0 6px #ffd700;}to{text-shadow:0 0 30px #ffeb3b,0 0 60px #ffd700;}}
@@ -203,7 +209,10 @@ footer{background:linear-gradient(135deg,#000000 0%,#000000 50%,#000000 100%);co
   .navbar{font-size:14px;padding:10px;}
   .hero{min-height:auto;}
   .overlay{padding:40px 15px 20px;gap:6px;min-height:-webkit-fill-available;}
-  .top-text{font-size:11px;line-height:1.1;max-width:220px;margin-bottom:2px;}
+  /* ─── mobile top-text hierarchy ─── */
+  .top-text .diocese{font-size:16px;}
+  .top-text .nigeria{font-size:13px;}
+  .top-text .anglican{font-size:10px;}
   .hero-logo{width:120px;margin:2px;}
   .main-title{font-size:24px;line-height:1.1;}
   .tagline{font-size:13px;}
@@ -227,7 +236,11 @@ footer{background:linear-gradient(135deg,#000000 0%,#000000 50%,#000000 100%);co
 
 <section class="hero">
   <div class="overlay">
-    <div class="top-text">CHURCH OF NIGERIA<br>(Anglican Communion)<br>DIOCESE OF LAGOS WEST</div>
+    <div class="top-text">
+      <span class="diocese">DIOCESE OF LAGOS WEST</span>
+      <span class="nigeria">CHURCH OF NIGERIA</span>
+      <span class="anglican">(Anglican Communion)</span>
+    </div>
     <img src="logo.png" class="hero-logo" alt="Church Logo" decoding="async">
     <h2 class="main-title">ST. MICHAEL'S ANGLICAN CHURCH, EGBEDA</h2>
     <p class="tagline">CITADEL OF PEACE WHERE JESUS REIGNS</p>
@@ -253,17 +266,17 @@ footer{background:linear-gradient(135deg,#000000 0%,#000000 50%,#000000 100%);co
     <div class="card-new">
       <div class="card-icon"><i class="fas fa-cross"></i></div>
       <div class="card-title">Mission</div>
-      <div class="card-body">Sustained growth of churches and worshippers within the diocese.</div>
+      <div class="card-body">To ensure a sustained growth in the number of churches and worshippers within the diocese.</div>
     </div>
     <div class="card-new">
       <div class="card-icon"><i class="fas fa-eye"></i></div>
       <div class="card-title">Vision</div>
-      <div class="card-body">Leading diocese in preparing this nation for the second coming of Christ.</div>
+      <div class="card-body">To be the leading diocese in the Church of Nigeria in preparing this nation for the second coming of Christ.</div>
     </div>
     <div class="card-new" style="background:#000000;border-color:#fdd835;border-width:2px;">
       <div class="card-icon"><i class="fas fa-globe"></i></div>
       <div class="card-title">Our Motto</div>
-      <div class="card-body" style="font-size:16px;font-weight:700;color:#fdd835;letter-spacing:.4px;">Christ For All Nations</div>
+      <div class="card-body" style="font-size:16px;font-weight:700;color:#fdd835;letter-spacing:.4px;">Christ For All Nation</div>
     </div>
   </div>
 </section>
@@ -309,7 +322,7 @@ footer{background:linear-gradient(135deg,#000000 0%,#000000 50%,#000000 100%);co
     <div class="contact-card">
       <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
       <div class="contact-card-label">Phone</div>
-      <div class="contact-card-value"><a href="tel:08037210209">08037210209</a></div>
+      <div class="contact-card-value"><a href="tel:08037210209">08037210209 (VICAR)</a></div>
     </div>
     <div class="contact-card">
       <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
@@ -346,7 +359,7 @@ footer{background:linear-gradient(135deg,#000000 0%,#000000 50%,#000000 100%);co
     <div class="footer-col">
       <div class="footer-divider"></div>
       <h4><i class="fas fa-church" style="margin-right:6px;"></i>Location &amp; Hours</h4>
-      <p>40 Alh. Ramota Close,<br>By Banire Bus Stop,<br>Akowonjo Rd, Egbeda, Lagos.</p>
+      <p>40 Alh Ramota Street Egbeda Or Bamgbola Avenue<br>By Bakery B/Stop Along Akowonjo Egbeda Road Egbeda.</p>
       <p style="margin-top:8px;">Sunday Service: <strong style="color:#fdd835;">7:00 AM</strong><br>Wednesday Ebenezer Hour: <strong style="color:#fdd835;">6:00 PM</strong></p>
     </div>
     <div class="footer-col">
