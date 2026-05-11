@@ -511,10 +511,14 @@
 
   /* Image fills the box — place any image inside */
   .portfolio-item img {
-    width: 100%; height: 100%;
-    object-fit: cover; display: block;
-    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-  }
+    width: 100%;
+    height: 105%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    padding: auto;
+    background: #050c15;
+}
 
   .portfolio-item:hover img { transform: scale(1.06); }
 
@@ -756,7 +760,7 @@
 <!-- ── NAVBAR ── -->
 <nav>
   <a href="#" class="nav-logo">
-    <img src="logo.jpg" alt="Vortex Visuals Logo" onerror="this.style.display='none'"/>
+    <img src="logo.jprg" alt="Vortex Visuals Logo" onerror="this.style.display='none'"/>
     <span class="nav-logo-text">VORTEX <span>VISUALS</span></span>
   </a>
   <ul class="nav-links">
@@ -924,7 +928,7 @@
 
     <!-- SAMPLE 1 — rename flyer.png to your actual file name -->
     <div class="portfolio-item fade-up">
-      <img src="flyer.png" alt="Design Sample 1" />
+      <img src="flyer.jpeg" alt="Design Sample 1" />
       <div class="portfolio-overlay">
         <p class="portfolio-label">Graphic Design</p>
         <p class="portfolio-name">Flyer Design</p>
@@ -933,7 +937,7 @@
 
     <!-- SAMPLE 2 — rename sample2.png to your actual file name -->
     <div class="portfolio-item fade-up">
-      <img src="sample2.png" alt="Design Sample 2" />
+      <img src="sample2.jpeg" alt="Design Sample 2" />
       <div class="portfolio-overlay">
         <p class="portfolio-label">Graphic Design</p>
         <p class="portfolio-name">Sample 02</p>
@@ -942,7 +946,7 @@
 
     <!-- SAMPLE 3 — rename sample3.png to your actual file name -->
     <div class="portfolio-item fade-up">
-      <img src="sample3.png" alt="Design Sample 3" />
+      <img src="sample3.jpeg" alt="Design Sample 3" />
       <div class="portfolio-overlay">
         <p class="portfolio-label">Graphic Design</p>
         <p class="portfolio-name">Sample 03</p>
@@ -951,7 +955,7 @@
 
     <!-- SAMPLE 4 — rename sample4.png to your actual file name -->
     <div class="portfolio-item fade-up">
-      <img src="sample4.png" alt="Design Sample 4" />
+      <img src="sample4.jpeg" alt="Design Sample 4" />
       <div class="portfolio-overlay">
         <p class="portfolio-label">Graphic Design</p>
         <p class="portfolio-name">Sample 04</p>
@@ -960,7 +964,7 @@
 
     <!-- SAMPLE 5 — rename sample5.png to your actual file name -->
     <div class="portfolio-item fade-up">
-      <img src="sample5.png" alt="Design Sample 5" />
+      <img src="sample5.jpeg" alt="Design Sample 5" />
       <div class="portfolio-overlay">
         <p class="portfolio-label">Graphic Design</p>
         <p class="portfolio-name">Sample 05</p>
@@ -969,7 +973,7 @@
 
     <!-- SAMPLE 6 — rename sample6.png to your actual file name -->
     <div class="portfolio-item fade-up">
-      <img src="sample6.png" alt="Design Sample 6" />
+      <img src="sample6.jpeg" alt="Design Sample 6" />
       <div class="portfolio-overlay">
         <p class="portfolio-label">Graphic Design</p>
         <p class="portfolio-name">Sample 06</p>
@@ -1095,6 +1099,7 @@
   </div>
 </section>
 
+
 <!-- ── FOOTER ── -->
 <footer>
   <div>
@@ -1170,6 +1175,7 @@
     document.body.appendChild(g);
     document.addEventListener('mousemove', e => { g.style.left = e.clientX + 'px'; g.style.top = e.clientY + 'px'; });
   }
+  
 </script>
 </body>
 </html>
